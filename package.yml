@@ -1,0 +1,16 @@
+name       : ffe
+version    : 0.3.7
+release    : 1
+source     :
+    - https://downloads.sourceforge.net/project/ff-extractor/ff-extractor/0.3.7-1/ffe-0.3.7-1.tar.gz : 0266e65778b4e69ae65c5dad43577767612f0afe13dc8c3e2cd3c49f7c869689
+license    : GPL-2.0
+component  : programming.tools
+summary    : ffe is a program for extracting fields from flat file records and displaying them in different formats.
+description: |
+    ffe is a program for extracting fields from flat file records and displaying them in different formats. ffe relies on the configuration file to control input file structure and the output format.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
